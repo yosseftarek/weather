@@ -1,0 +1,164 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <div class="logo float-start w-25">
+                <a href="#"><img src="images/logo@2x.png" alt="" class="w-25 float-start me-3">
+                    <p class="p-0 text-white">Weather</p>
+                    <p class="p-0 text-white tag">tagline goes here</p>
+
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item home">
+                        <a class="nav-link " href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="image pt-5">
+        <form action="" class="container">
+            <div class="inpbtn position-relative">
+                <input type="text" id="search" placeholder="Find your location..">
+                <button class="position-absolute btn">Find</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="container weather">
+        <div class="row g-0">
+
+            <div class="col-xxl-4 first">
+                <div class="header p-2">
+                    <div class="day float-start text-white" id="todDayName">Wednesday</div>
+                    <div class="date float-end text-white">
+                        <span id="todDayNum" class="mx-0">24</span>
+                        <span id="todMonth" class="mx-0">January</span>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="content px-3 py-4">
+                    <p class=" text-white" id="todLocation">Cairo</p>
+                    <div class="degree">
+                        <div class="number text-white d-flex align-items-center">
+                            <div>
+                                <span id="todDegree" class="m-0 fw-bold m-0 p-0">17</span>
+                                <span class="m-0 fw-bold p-0"><sup class="m-0 p-0">o</sup>C</span>
+                            </div>
+                            <img src="" class="imgg" alt=""id="img_tod">
+                        </div>
+                        <div class="icon d-inline-block text-white"><img src="" alt=""></div>
+                    </div>
+                    <div class="clear text-white pb-3" id="condition">Clear</div>
+                    <div class="cont-img d-flex justify-content-start align-items-center">
+                        <div>
+                            <img src="images/icon-umberella@2x.png" class="w-25 " alt="">
+                            <span class=" text-white m-0" id="humididty">20%</span>
+                        </div>
+                        <div>
+                            <img src="images/icon-wind@2x.png" class="w-25 " alt="">
+                            <span class=" text-white m-0" id="wind">20km/hr</span>
+                        </div>
+                        <div>
+                            <img src="images/icon-compass@2x.png" class="w-25 " alt="">
+                            <span class=" text-white m-0" id="wind_direction">East</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-4 second">
+                <div class="header p-2">
+                    <div class="day text-white text-center nextDayName">Wednesday</div>
+                </div>
+                <div class="content p-4">
+                    <div class="degree text-center">
+                        <div>
+                            <img src="" class="w-25 mt-5 mb-3 neximg" alt="">
+                        </div>
+                        <p class="text-white second-degree m-0 nextempMax">17<sup>o</sup>C</p>
+                        <small class="text-white py-0 nextempMin">11.6</small><sup class="text-white">o</sup>
+                        <p class="clear text-white text-center pt-2 nexPoss">Patchy rain possible</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-4 first">
+                <div class="header p-2">
+                    <div class="day text-white text-center nextDayName">Wednesday</div>
+                </div>
+                <div class="content p-4">
+                    <div class="degree text-center">
+                        <div>
+                            <img src="" class="w-25 mt-5 mb-3 neximg" alt="">
+                        </div>
+                        <p class="text-white second-degree m-0 nextempMax">17<sup>o</sup>C</p>
+                        <small class="text-white py-0 nextempMin">11.6</small><sup class="text-white">o</sup>
+                        <p class="clear text-white text-center pt-2 nexPoss">Patchy rain possible</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="d-flex">
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-8">
+                    <div class="inpbtn position-relative">
+                        <input type="text" id="search" placeholder="Enter your email to subscribe...">
+                        <button class="position-absolute btn">Subscribe</button>
+                    </div>
+                    <p class="text-white py-4">
+                        Copyright 2014 Company name. Designed by Themezy. All rights reserved
+                    </p>
+                </div>
+                <div class="col-md-offset-1 col-md-3">
+                    <div class="icons d-flex justify-content-center">
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-google"></i></a>
+                        <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
